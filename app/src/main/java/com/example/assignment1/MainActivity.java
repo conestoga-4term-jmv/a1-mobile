@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity{
         // Name validation - cannot be empty
         if (username.trim().isEmpty()) {
             Toast.makeText(this, "Please enter your name!", Toast.LENGTH_SHORT).show();
+            edtTxtName.setText("");
             return;
         }
         //create the random number (1 to 100)
